@@ -8,13 +8,30 @@ It is wrote in the Python programming language Version 3.<br/>
 The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization and machine learning.<br/>
 <img height="300" width="600" src="https://miro.medium.com/max/3840/1*R5uM8zw8uhW4-HC4F1v9IA.png" />
 
-## Installation 
+## Installation
+### Step 1
 git clone https://github.com/CathalDonohoe/EmergingTechTaskProject <br/>
 <img height="100" src="https://gyazo.com/2de6a6c0d18982743012ef8ddf0b5e5c.png"/>
+### Step 2
 Then direct to the folder that you have cloned the repository to. from there click on the path and type cmd.
 <img src="https://gyazo.com/c9cf06233d5c938b08e68888a9c47eda.png"/>
-From here type "jupyter notebook" and run it.</br>
+### Step 3
+From here type "jupyter notebook" and run it. </br>
 <img src="https://gyazo.com/a307423d2ae7333ec5da3ff07b0515f3.png"/>
+### Step 4
+This will open a tab on your browser.
+Proceed to click on the .ipynbd
+<img src="https://gyazo.com/d13731cfeb220fb235855678ead6eb78.png"/>
+
+## Tasks
+### Task 1
+This Task involves finding the square route of the number 2, and printing it to 100 decimal places.  The code however cannot depend on any module from the standard library or otherwise. One of the methods we can use to do this is Newtons method. We could us this to print out the square root of 2 very simply. However, as this is coded in python, its print method will only print a float value up to 52 places after the decimal point.
+To work against this we use a googol. A googol is essentially 10 to the power of 100. 
+
+### Task 2
+Task 2 involves using the Chi-Square test to varify the chi-squared value. We do this by using pre-defined data given to us.
+<img src = "https://gyazo.com/7eebeadd511a9a2ab15af386e4acaca2.png" />
+The Chi-squared test is a statistical hypothesis test determines whether there is an association between catagorical variables. This basically means it can find out if variables are independant or related to one another.
 
 ## Research for Project
 ### Task 1
