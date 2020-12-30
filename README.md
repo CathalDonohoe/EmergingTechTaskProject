@@ -24,14 +24,43 @@ Proceed to click on the .ipynbd
 <img src="https://gyazo.com/d13731cfeb220fb235855678ead6eb78.png"/>
 
 ## Tasks
+</br>
 ### Task 1
-This Task involves finding the square route of the number 2, and printing it to 100 decimal places.  The code however cannot depend on any module from the standard library or otherwise. One of the methods we can use to do this is Newtons method. We could us this to print out the square root of 2 very simply. However, as this is coded in python, its print method will only print a float value up to 52 places after the decimal point.
-To work against this we use a googol. A googol is essentially 10 to the power of 100. 
+
+This Task involves finding the square route of the number 2, and printing it to 100 decimal places. According to Collins dictionary the definition of the square root is "The square root of a number is another number which produces the first number when it is multiplied by itself. For example, the square root of 16 is 4." So the objective of this task is to get the number that when multiplied by itself is equal to 2. The code however cannot depend on any module from the standard library or otherwise. One of the methods we can use to do this is Newtons method. We could us this to print out the square root of 2 very simply. However, as this is coded in python, its print method will only print a float value up to 52 places after the decimal point.
+To work against this we use a googol. A googol is essentially 10 to the power of 100. multiplying 2 by googol to the power of 2 will give use the square root and move it to 100 decimal places from the decimal point. After this I floor devision to bit shift the number to the left of the decimal place. Floor division is a normal division operation except that it returns the largest possible integer. This integer is either less than or equal to the normal division result.I then convert this number to a string.m I use the ".find()" function to find the first instance of the number 4 in the string, as we know the first number after 1 in the square root of 2 is 4. Then I insert a decimal place before this number and print out the string giving us this:
+<img src="https://gyazo.com/c0e466f964884a2be4804ca4b4dab770.png"/>
+</br>
 
 ### Task 2
-Task 2 involves using the Chi-Square test to varify the chi-squared value. We do this by using pre-defined data given to us.
-<img src = "https://gyazo.com/7eebeadd511a9a2ab15af386e4acaca2.png" />
-The Chi-squared test is a statistical hypothesis test determines whether there is an association between catagorical variables. This basically means it can find out if variables are independant or related to one another.
+
+Task 2 involves using the Chi-Square test to varify the chi-squared value. We do this by using pre-defined data given to us.</br>
+<img src = "https://gyazo.com/7eebeadd511a9a2ab15af386e4acaca2.png" /> </br>
+The Chi-squared test is a statistical hypothesis test determines whether there is an association between catagorical variables. This basically means it can find out if variables are independant or related to one another. Chi-square tests are often used in hypothesis testing. The chi-square statistic compares the size of any discrepancies between the expected results and the actual results, given the size of the sample and the number of variables in the relationship.</br>
+Chi-square formula below:</br>
+<img src="https://gyazo.com/e5528137c77226c1056fee0eb7f54cc6.png"/> </br>
+I first created a dataset with the with the data given to us in the brief. I did this by creating an array with multiple sets like so: </br>
+<img src="https://gyazo.com/6c0c407e16edf0ce2eb25f9814bc77ac.png"</br>
+After this i use the stats.chi_contingencey function to execute the chi square test on the data. When we do this we can get the Chi value, the p value and the expected values by doing so: </br>
+<img src="https://gyazo.com/c8fd667bf3f84912597aff53786745e6.png"/> </br>
+After doing this, we simply need to print the values to confirm the Chi-squared value and to get the P-value: </br>
+<img src="https://gyazo.com/598e7aeee0d39b91daa9b6960a3628de.png"/> </br>
+This confirms that the associated Chi-squared value is indeed 24.6 and that the P-value is 0.00409.
+</br>
+
+### Task 3
+
+Task 3 goal is to compare Standard deviation funcitons.  Microsoft  Excel  has  two  different  versions  of  the  standard  deviationc alculation, STDEV.P and STDEV.S. The main difference between these two functions is the formula. Where STDEV.P's funciton is: </br>
+### np.sqrt(np.sum((x - np.mean(x))**2)/len(x))</br>
+STDEV.S's fucntion is: </br>
+### np.sqrt(np.sum((x - np.mean(x))**2)/len(x)-1). </br>
+Now there is very little difference in the formulas but the output will be different. We are tasked with demonstrating that the STDEV.S function is a better estimate than the STDEV.P funciton.</br>
+To do this I first calculated the standard deviation on a whole population: </br>
+<img src="https://gyazo.com/b0bae931f6873598131560eb3f9c68c4.png"/></br>
+This tells us that the Standard Deviation for that Data is 27.706. From here we simply need to execute the other two funstions, with the same sample population, and see their outputs: </br>
+<img src="https://gyazo.com/ddfeb40c2a12306f77800663d8d764ec.png"/></br>
+From here we can see that STDEV.P return 33.508, whereas STDEV.S returns to us 33.493. As STDEV.S's return is closer to the actual standard deviation, we can deduce that STDEV.S is a more accurate estimate of the standard deviation than STDEV.P. </br>
+
 
 ## Research for Project
 ### Task 1
