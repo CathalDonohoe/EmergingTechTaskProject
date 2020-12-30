@@ -22,9 +22,13 @@ From here type "jupyter notebook" and run it. </br>
 This will open a tab on your browser.
 Proceed to click on the .ipynbd
 <img src="https://gyazo.com/d13731cfeb220fb235855678ead6eb78.png"/>
+After this you may need to edit task 4. Task 4 takes in the Iris data set from a file directory. As it is expected, your file locqation for the Iris dataset will be different. Please edit this line of code here in order for it to work: </br>
+<img src="https://gyazo.com/a04437d05cb4c72a5aae33cafcd840b9.png"/> </br>
+After this, hit the Kernal tab and click "Restart & Run All". </br>
 
 ## Tasks
 </br>
+
 ### Task 1
 
 This Task involves finding the square route of the number 2, and printing it to 100 decimal places. According to Collins dictionary the definition of the square root is "The square root of a number is another number which produces the first number when it is multiplied by itself. For example, the square root of 16 is 4." So the objective of this task is to get the number that when multiplied by itself is equal to 2. The code however cannot depend on any module from the standard library or otherwise. One of the methods we can use to do this is Newtons method. We could us this to print out the square root of 2 very simply. However, as this is coded in python, its print method will only print a float value up to 52 places after the decimal point.
@@ -51,7 +55,7 @@ This confirms that the associated Chi-squared value is indeed 24.6 and that the 
 ### Task 3
 
 Task 3 goal is to compare Standard deviation funcitons.  Microsoft  Excel  has  two  different  versions  of  the  standard  deviationc alculation, STDEV.P and STDEV.S. The main difference between these two functions is the formula. Where STDEV.P's funciton is: </br>
-### np.sqrt(np.sum((x - np.mean(x))**2)/len(x))</br>
+### np.sqrt(np.sum((x - np.mean(x))**2)/len(x)) </br>
 STDEV.S's fucntion is: </br>
 ### np.sqrt(np.sum((x - np.mean(x))**2)/len(x)-1). </br>
 Now there is very little difference in the formulas but the output will be different. We are tasked with demonstrating that the STDEV.S function is a better estimate than the STDEV.P funciton.</br>
@@ -60,6 +64,17 @@ To do this I first calculated the standard deviation on a whole population: </br
 This tells us that the Standard Deviation for that Data is 27.706. From here we simply need to execute the other two funstions, with the same sample population, and see their outputs: </br>
 <img src="https://gyazo.com/ddfeb40c2a12306f77800663d8d764ec.png"/></br>
 From here we can see that STDEV.P return 33.508, whereas STDEV.S returns to us 33.493. As STDEV.S's return is closer to the actual standard deviation, we can deduce that STDEV.S is a more accurate estimate of the standard deviation than STDEV.P. </br>
+
+### Task 4
+
+Task 4 objective is to use the Sckit-learn to apply k-means clustering to Fishers Iris Data set. The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician, eugenicist, and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other. </br>
+We can use k-means clustering to demonstrate this data visually. k-means clustering is a method of vector quantization that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster. </br>
+To do this we import the kmeans from sklearn.cluster. We then read in the Iris dataset. There are multiple ways of doing this, but I opted to import it from a file location. After this we put the data from the csv file into arrays. I then stack the 4 arrays(from the 4 columns in the csv) into 2 variables. I then concatenate them into a master dataset. </br>
+I fit the dataset with 3 clusters. Then i assign each cluster a colour and shape to differentiate them from eachother. Then after setting up centers for the clustersi plot it onto the screen with this output: </br>
+<img src="https://gyazo.com/d3ca883809d046797f7c0109bfe2fb1e.png"/> </br>
+The brief specifies that we should demonstrate predictions within our code. So i made du8mmy data and place it into a data set. I give these a different shape and colour and print them out with the plot:
+</br>
+<img src="https://gyazo.com/9da42eaa762121e2ff6bda600d84d08e.png"/> </br>
 
 
 ## Research for Project
