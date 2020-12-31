@@ -44,7 +44,7 @@ The Chi-squared test is a statistical hypothesis test determines whether there i
 Chi-square formula below:</br>
 <img src="https://gyazo.com/e5528137c77226c1056fee0eb7f54cc6.png"/> </br>
 I first created a dataset with the with the data given to us in the brief. I did this by creating an array with multiple sets like so: </br>
-<img src="https://gyazo.com/6c0c407e16edf0ce2eb25f9814bc77ac.png"</br>
+<img src="https://gyazo.com/6c0c407e16edf0ce2eb25f9814bc77ac.png"/></br>
 After this i use the stats.chi_contingencey function to execute the chi square test on the data. When we do this we can get the Chi value, the p value and the expected values by doing so: </br>
 <img src="https://gyazo.com/c8fd667bf3f84912597aff53786745e6.png"/> </br>
 After doing this, we simply need to print the values to confirm the Chi-squared value and to get the P-value: </br>
